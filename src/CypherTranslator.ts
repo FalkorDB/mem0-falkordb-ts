@@ -45,7 +45,7 @@ export class CypherTranslator {
     // We need to handle nested parens inside the first argument.
     return query.replace(
       /\bround\s*\(([\s\S]*?),\s*(\d+)\s*\)\s*AS\b/g,
-      (match, expr, _precision) => {
+      (_match, expr) => {
         return `round(${expr}) AS`;
       }
     );
