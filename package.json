@@ -16,6 +16,11 @@
   "dependencies": {
     "falkordb": "^6.0.0"
   },
+  "overrides": {
+    "mem0ai": {
+      "@types/jest": "$@types/jest"
+    }
+  },
   "devDependencies": {
     "@types/jest": "^30.0.0",
     "@types/node": "^25.3.0",
