@@ -109,7 +109,6 @@ describe("CypherTranslator", () => {
   describe("params mutation", () => {
     it("does not mutate the original params object", () => {
       const originalParams = { relType: "KNOWS", other: "value" };
-      const paramsCopy = { ...originalParams };
       CypherTranslator.translate(
         "CALL apoc.merge.relationship(a, $relType, {}, {}, b) YIELD rel",
         originalParams
