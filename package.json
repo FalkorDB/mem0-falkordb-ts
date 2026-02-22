@@ -12,13 +12,13 @@
   ],
   "author": "FalkorDB",
   "license": "MIT",
-  "homepage": "https://github.com/falkordb/mem0-falkordb-ts#readme",
+  "homepage": "https://github.com/FalkorDB/mem0-falkordb-ts#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/falkordb/mem0-falkordb-ts"
+    "url": "https://github.com/FalkorDB/mem0-falkordb-ts"
   },
   "bugs": {
-    "url": "https://github.com/falkordb/mem0-falkordb-ts/issues"
+    "url": "https://github.com/FalkorDB/mem0-falkordb-ts/issues"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
