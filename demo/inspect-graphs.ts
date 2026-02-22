@@ -1,5 +1,5 @@
 /**
- * Graph inspector for falkordb-mem0.
+ * Graph inspector for @falkordb/mem0.
  *
  * Connects directly to FalkorDB and displays the raw graph structure
  * for each user's memory graph. Useful for understanding how memories
@@ -148,7 +148,7 @@ async function displayUserGraph(
 
 async function main() {
   console.log(`\n${"─".repeat(60)}`);
-  console.log(`${BOLD}  falkordb-mem0 Graph Inspector${RESET}`);
+  console.log(`${BOLD}  @falkordb/mem0 Graph Inspector${RESET}`);
   console.log(`  View raw graph structure for each user's memory`);
   console.log(`${"─".repeat(60)}`);
 

@@ -1,4 +1,4 @@
-# falkordb-mem0
+# @falkordb/mem0
 
 FalkorDB graph store backend for the [mem0ai](https://github.com/mem0ai/mem0) TypeScript SDK.
 
@@ -19,13 +19,13 @@ docker run -p 6379:6379 -it --rm falkordb/falkordb
 ## Installation
 
 ```bash
-npm install falkordb-mem0 mem0ai
+npm install @falkordb/mem0 mem0ai
 ```
 
 ## Quick Start
 
 ```typescript
-import { FalkorMemory } from "falkordb-mem0";
+import { FalkorMemory } from "@falkordb/mem0";
 
 const memory = new FalkorMemory({
   enableGraph: true,
@@ -120,7 +120,7 @@ Same API as mem0's `Memory` class, plus:
 Can be used standalone without the vector store layer:
 
 ```typescript
-import { FalkorMemoryGraph } from "falkordb-mem0";
+import { FalkorMemoryGraph } from "@falkordb/mem0";
 
 const graph = new FalkorMemoryGraph(config);
 await graph.add("Bob likes pizza", { userId: "bob" });
@@ -135,7 +135,7 @@ await graph.close();
 Low-level FalkorDB driver wrapper with automatic Cypher translation:
 
 ```typescript
-import { FalkorDBGraph } from "falkordb-mem0";
+import { FalkorDBGraph } from "@falkordb/mem0";
 
 const db = new FalkorDBGraph({ host: "localhost", port: 6379 });
 const rows = await db.query("MATCH (n) RETURN n.name AS name LIMIT 10");
@@ -147,7 +147,7 @@ await db.close();
 Static utility for translating Neo4j Cypher to FalkorDB-compatible Cypher:
 
 ```typescript
-import { CypherTranslator } from "falkordb-mem0";
+import { CypherTranslator } from "@falkordb/mem0";
 
 const { query, params } = CypherTranslator.translate(
   "RETURN elementId(n) AS id",

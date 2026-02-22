@@ -1,7 +1,7 @@
 # Project Guidelines
 
 ## Overview
-falkordb-mem0 is a FalkorDB graph store backend for the [mem0ai](https://github.com/mem0ai/mem0) TypeScript SDK. It provides a drop-in replacement for mem0's Neo4j-based graph memory by offering a `FalkorMemory` class that uses FalkorDB as the graph store backend.
+@falkordb/mem0 is a FalkorDB graph store backend for the [mem0ai](https://github.com/mem0ai/mem0) TypeScript SDK. It provides a drop-in replacement for mem0's Neo4j-based graph memory by offering a `FalkorMemory` class that uses FalkorDB as the graph store backend.
 
 ## Build & Install
 ```bash
@@ -11,7 +11,7 @@ npm run build  # compile TypeScript
 
 Or for production use:
 ```bash
-npm install falkordb-mem0
+npm install @falkordb/mem0
 ```
 
 ## Testing

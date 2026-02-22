@@ -1,5 +1,5 @@
 {
-  "name": "falkordb-mem0",
+  "name": "@falkordb/mem0",
   "version": "0.1.0",
   "description": "FalkorDB graph store backend for the mem0ai TypeScript SDK",
   "main": "dist/index.js",

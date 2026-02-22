@@ -1,5 +1,5 @@
 /**
- * Multi-User Agentic Memory Demo for falkordb-mem0.
+ * Multi-User Agentic Memory Demo for @falkordb/mem0.
  *
  * This demo showcases:
  * - Graph-structured memory (relationships between entities)
@@ -18,7 +18,7 @@
  *   DEMO_CI_MODE=1 npx tsx demo.ts
  */
 
-import { FalkorMemory, FalkorMemoryGraph } from "falkordb-mem0";
+import { FalkorMemory, FalkorMemoryGraph } from "@falkordb/mem0";
 
 // ── Helpers ─────────────────────────────────────────────────────────────
 
@@ -254,7 +254,7 @@ async function scene5ScaleDemo(memory: FalkorMemory): Promise<void> {
 
 async function main() {
   console.log(`\n${"─".repeat(60)}`);
-  console.log(`${BOLD}  falkordb-mem0 Multi-User Demo${RESET}`);
+  console.log(`${BOLD}  @falkordb/mem0 Multi-User Demo${RESET}`);
   console.log(`  Showcasing graph-structured memory with per-user isolation`);
   console.log(`${"─".repeat(60)}`);
 
@@ -324,7 +324,7 @@ async function main() {
     console.log(`${GREEN}${BOLD}  CI Validation Complete!${RESET}`);
     console.log(`  - Demo script imports successfully`);
     console.log(`  - FalkorMemory instance created`);
-    console.log(`  - falkordb-mem0 provider configured`);
+    console.log(`  - @falkordb/mem0 provider configured`);
     console.log(`${DIM}  Run without DEMO_CI_MODE for the full demo${RESET}`);
     console.log(`${"─".repeat(60)}`);
     await memory.close();
