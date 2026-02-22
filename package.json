@@ -1,7 +1,25 @@
 {
   "name": "@falkordb/mem0",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "FalkorDB graph store backend for the mem0ai TypeScript SDK",
+  "keywords": [
+    "falkordb",
+    "mem0",
+    "graph",
+    "memory",
+    "ai",
+    "llm"
+  ],
+  "author": "FalkorDB",
+  "license": "MIT",
+  "homepage": "https://github.com/falkordb/mem0-falkordb-ts#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/falkordb/mem0-falkordb-ts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/falkordb/mem0-falkordb-ts/issues"
+  },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
