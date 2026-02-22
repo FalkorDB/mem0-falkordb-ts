@@ -21,6 +21,9 @@
       "@types/jest": "$@types/jest"
     }
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@types/jest": "^30.0.0",
     "@types/node": "^25.3.0",
