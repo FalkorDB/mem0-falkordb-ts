@@ -13,11 +13,8 @@ jobs:
       contents: read
     steps:
       - uses: actions/checkout@v4
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Spellcheck
+        uses: rojopolis/spellcheck-github-actions@0.58.0
         with:
-          node-version: '18'
-      - name: Install dependencies
-        run: npm install
-      - name: Run spellcheck
-        run: npm run spellcheck
+          config_path: .github/spellcheck-settings.yml
+          task_name: Markdown
