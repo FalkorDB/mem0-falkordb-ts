@@ -1,0 +1,17 @@
+{
+  "name": "falkordb-mem0-demo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Interactive demo for falkordb-mem0 showcasing graph memory",
+  "scripts": {
+    "demo": "tsx demo.ts",
+    "inspect": "tsx inspect-graphs.ts"
+  },
+  "dependencies": {
+    "falkordb-mem0": "file:..",
+    "mem0ai": "^2.2.3",
+    "falkordb": "^6.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}
