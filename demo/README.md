@@ -1,6 +1,6 @@
-# falkordb-mem0 Multi-User Demo
+# @falkordb/mem0 Multi-User Demo
 
-Interactive demo showcasing **graph-structured memory** with per-user isolation using `falkordb-mem0`.
+Interactive demo showcasing **graph-structured memory** with per-user isolation using `@falkordb/mem0`.
 
 ## Features Demonstrated
 
