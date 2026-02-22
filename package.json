@@ -15,7 +15,7 @@
   "homepage": "https://github.com/falkordb/mem0-falkordb-ts#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/falkordb/mem0-falkordb-ts.git"
+    "url": "https://github.com/falkordb/mem0-falkordb-ts"
   },
   "bugs": {
     "url": "https://github.com/falkordb/mem0-falkordb-ts/issues"
@@ -36,8 +36,11 @@
   },
   "overrides": {
     "mem0ai": {
-      "@types/jest": "$@types/jest"
-    }
+      "@types/jest": "$@types/jest",
+      "axios": "^1.13.5"
+    },
+    "undici": "^5.29.0",
+    "langsmith": "^0.4.6"
   },
   "publishConfig": {
     "access": "public"
