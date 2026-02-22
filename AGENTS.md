@@ -97,10 +97,10 @@ Standard Cypher features work as-is: `MERGE`, `MATCH`, `DETACH DELETE`, `timesta
 ## CI/CD
 - **GitHub Actions workflows**:
   - Dependencies: Dependabot for npm dependency updates
-  - Spellcheck: Runs cspell on push/PR to main branch
-  - Testing: (Add test workflow as needed)
-  - Linting: (Add lint workflow as needed)
-  - Build: (Add build workflow as needed)
+  - Spellcheck: `spellcheck` job in `.github/workflows/ci.yml` (runs cspell on push/PR to main branch)
+  - Testing: `test` job in `.github/workflows/ci.yml` (runs automated tests on push/PR)
+  - Linting: `lint` job in `.github/workflows/ci.yml` (runs code linting on push/PR)
+  - Build: `build` job in `.github/workflows/ci.yml` (runs the project build on push/PR)
   - Publish: (Add publish workflow for npm as needed)
 
 ## Before Finishing a Task
