@@ -34,5 +34,18 @@ jobs:
       - name: Test
         run: npm test
 
+      - name: Set version from Git tag
+        run: |
+          if [[ ! "$GITHUB_REF_NAME" =~ ^v[0-9]+\.[0-9]+\.[0-9]+(-.+)?$ ]]; then
+            echo "Error: tag '$GITHUB_REF_NAME' does not match expected format vX.Y.Z or vX.Y.Z-prerelease"
+            exit 1
+          fi
+          VERSION="${GITHUB_REF_NAME#v}"
+          npm version "$VERSION" --no-git-tag-version
+
       - name: Publish
         run: npm publish --provenance --access public
+        env:
+          # NODE_AUTH_TOKEN is the standard env var used by actions/setup-node
+          # to configure npm authentication; NPM_TOKEN is the repository secret name.
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
