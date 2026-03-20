@@ -393,7 +393,7 @@ export class FalkorMemoryGraph {
       [
         {
           role: "system",
-          content: `You are a smart assistant who understands entities and their types in a given text. If user message contains self reference such as 'I', 'me', 'my' etc. then use ${filters["userId"]} as the source entity. Extract all the entities from the text. ***DO NOT*** answer the question itself if the given text is a question.`,
+          content: `You are a smart assistant who understands entities and their types in a given text. If user message contains self reference such as 'I', 'me', 'my' etc. then use ${filters["userId"]} as the source entity. Extract all the entities from the text. Respond in JSON format. ***DO NOT*** answer the question itself if the given text is a question.`,
         },
         { role: "user", content: data },
       ],
@@ -553,10 +553,9 @@ export class FalkorMemoryGraph {
       )
       .join("\n");
 
-    const systemPrompt = DELETE_RELATIONS_SYSTEM_PROMPT.replace(
-      "USER_ID",
-      filters["userId"]
-    );
+    const systemPrompt =
+      DELETE_RELATIONS_SYSTEM_PROMPT.replace("USER_ID", filters["userId"]) +
+      "\nRespond in JSON format.";
     const userPrompt = `Here are the existing memories: ${searchOutputString} \n\n New Information: ${data}`;
 
     const tools = [DELETE_MEMORY_TOOL_GRAPH];
