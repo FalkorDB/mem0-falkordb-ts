@@ -1,7 +1,7 @@
 [![Tests](https://img.shields.io/github/actions/workflow/status/falkordb/mem0-falkordb-ts/ci.yml?branch=main)](https://github.com/falkordb/mem0-falkordb-ts/actions/workflows/ci.yml)
 [![Coverage](https://codecov.io/gh/falkordb/mem0-falkordb-ts/branch/main/graph/badge.svg?token=nNxm2N0Xrl)](https://codecov.io/gh/falkordb/mem0-falkordb-ts)
 [![License](https://img.shields.io/github/license/falkordb/mem0-falkordb-ts.svg)](https://github.com/falkordb/mem0-falkordb-ts/blob/main/LICENSE)
-[![Discord](https://img.shields.io/discord/1146782921294884966.svg?style=social&logo=discord)](https://discord.com/invite/99y2Ubh6tg)
+[![Discord](https://img.shields.io/discord/1146782921294884966.svg?style=social&logo=discord)](https://discord.com/invite/6M4QwDXn2w)
 [![Twitter](https://img.shields.io/twitter/follow/falkordb?style=social)](https://twitter.com/falkordb)
 
 # @falkordb/mem0
