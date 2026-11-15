@@ -32,7 +32,7 @@
     "mem0ai": ">=2.0.0"
   },
   "dependencies": {
-    "falkordb": "^6.0.0"
+    "falkordb": "^7.0.1"
   },
   "overrides": {
     "mem0ai": {
