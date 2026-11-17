@@ -54,6 +54,6 @@
     "jest": "^30.2.0",
     "mem0ai": "^2.2.3",
     "ts-jest": "^29.0.0",
-    "typescript": "^5.0.0"
+    "typescript": "^7.0.2"
   }
 }
