@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@falkordb/mem0": "file:..",
-    "mem0ai": "^2.2.3",
+    "mem0ai": "^3.3.1",
     "falkordb": "^6.0.0",
     "tsx": "^4.0.0",
     "typescript": "^5.0.0"
